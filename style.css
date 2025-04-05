@@ -43,6 +43,9 @@ body {
     padding-bottom: 5px;
     color: #c51010;
   }
+ h3{
+    color: #0f176e
+  }
   
   ul {
     list-style: square inside;
