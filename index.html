@@ -120,7 +120,6 @@
     </div>
   </div>
 
-  <!-- Download Buttons -->
   <div class="download-buttons">
     <button onclick="downloadImage()" style="color:white;">Download as Image (PNG)</button>
     <button onclick="downloadPDF()">Download as PDF</button>
@@ -141,15 +140,13 @@
       const { jsPDF } = window.jspdf;
       const resume = document.getElementById("resume-content");
       
-      // Set PDF options
       const pdf = new jsPDF('p', 'pt', 'a4');
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
       
-      // Calculate the height of the resume content
       html2canvas(resume, {
-        scale: 2, // Higher quality
-        scrollY: -window.scrollY // Fix for scrolling issues
+        scale: 2, 
+        scrollY: -window.scrollY 
       }).then(canvas => {
         const imgData = canvas.toDataURL('image/png');
         const imgProps = pdf.getImageProperties(imgData);
@@ -158,7 +155,6 @@
         let heightLeft = imgHeight;
         let position = 0;
         
-        // Add first page
         pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, imgHeight);
         heightLeft -= pdfHeight;
         
