@@ -3,97 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name - Data Analyst Resume</title>
+  <title>Sandeep Mallick - Data Analyst Resume</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Add jsPDF library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    .download-buttons {
+      text-align: center; 
+      margin: 20px; 
+      display: flex; 
+      justify-content: center; 
+      gap: 20px;
+    }
+    .download-buttons button {
+      padding: 20px 15px;
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .download-buttons button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-  <div class="resume-header">
-    <!-- Header Section -->
-    <header>
-      <!-- <h1 href="sandeepmallick.netlify.ap">Sandeeep mallick</h1> -->
-      <a href="https://sandeepmallick.netlify.app/?fbclid=PAZXh0bgNhZW0CMTEAAafWNpNVZ--8wEkTYFq5id4wwy_Nz1lVWpYEzSSIBB1Bx5Lq8bcIaNs0u_km4w_aem_eQLU9CRutO2Lz2C9xtHT-w" style="text-decoration: none;color: rgb(0, 0, 0)"><h1 >Sandeep Mallick</h1></a>
-      <p style="font-weight: bold;">Data Analyst</p>
-      <p>sandeepmallick7254@gmail.com | 9555812368</p>
-      <p style="font-weight: bold;">   Linkedin | Github   </p>
-    <!-- <img src="linkdin.jpg" alt="logo" width="30",class="logo">
-    <img heref="https://github.com/sandeepmallick" src="hub.jpg" alt="logo" width="30",class="logo"> -->
-    </header>
-    <section class="logo" style="text-align: center;">
-        <a href="https://www.linkedin.com/in/insandeep-mallick/" ><img src="linkdin.jpg" alt="logo" width="30" text-align="center"> <span> sandeep mallick </span></a>
-        <a href="https://github.com/sandeepmallick"><img src="hub.jpg" width="30"><span>sandeepmallick</span></a>
+  <div id="resume-content">
+    <div class="resume-header">
+      <header>
+        <a href="https://sandeepmallick.netlify.app/?fbclid=PAZXh0bgNhZW0CMTEAAafWNpNVZ--8wEkTYFq5id4wwy_Nz1lVWpYEzSSIBB1Bx5Lq8bcIaNs0u_km4w_aem_eQLU9CRutO2Lz2C9xtHT-w" style="text-decoration: none;color: rgb(0, 0, 0)">
+          <h1>Sandeep Mallick</h1>
+        </a>
+        <p style="font-weight: bold;">Data Analyst</p>
+        <p>sandeepmallick7254@gmail.com | 9555812368</p>
+        <p style="font-weight: bold;">Linkedin | Github</p>
+      </header>
 
-    </section>
+      <section class="logo" style="text-align: center;">
+        <a href="https://www.linkedin.com/in/insandeep-mallick/">
+          <img src="linkdin.jpg" alt="logo" width="30" text-align="center"> <span> sandeep mallick </span>
+        </a>
+        <a href="https://github.com/sandeepmallick">
+          <img src="hub.jpg" width="30"><span>sandeepmallick</span>
+        </a>
+      </section>
 
-    <!-- Summary Section -->
-    <section class="summary">
-      <h2>PROFESSIONAL SUMMARY</h2>
-      <p font-weight="bold">Data Analyst with experience in Python, SQL, and Power BI. Skilled in data visualization, cleaning, and statistical analysis to help drive business decisions.</p>
-   </section>
+      <section class="summary">
+        <h2>PROFESSIONAL SUMMARY</h2>
+        <p font-weight="bold">Data Analyst with experience in Python, SQL, and Power BI. Skilled in data visualization, cleaning, and statistical analysis to help drive business decisions.</p>
+      </section>
 
-    <!-- Skills Section -->
-    <section class="skills", style="font-weight: bold;">
-      <h2>TECHNICAL SKILLS</h2>
-      <ul>
-        <li>Python</li>
-        <li>MYSQL,SQL</li>
-        <li>Power BI</li>
-        <li>Excel</li>
-        <li>Data Cleaning</li>
-        <li>Data Visualization</li>
-        <li>Problem solving</li>
-        <li>Dash</li>
-      </ul>
-    </section>
+      <section class="skills" style="font-weight: bold;">
+        <h2>TECHNICAL SKILLS</h2>
+        <ul>
+          <li>Python</li>
+          <li>SQL,MySQL</li>
+          <li>Power BI</li>
+          <li>Excel</li>
+          <li>Data Cleaning</li>
+          <li>Data Visualization</li>
+          <li>Problem solving</li>
+          <li>Trends Dashboard</li>
+        </ul>
+      </section>
 
-    <!-- Projects Section -->
-    <section class="projects">
-      <h2>PROJECTS</h2>
-      <div class="project-item">
-        <h3>1.hotel-cancellation-insights</h3>
-        <p>This project analyzes hotel booking cancellations using Excel, covering data cleaning, exploration and visualization.</li>
-        <li>Excel (Pivot Tables, Charts) Power Query (for filtering and transformation) Data Visualization (for interactive analysis)</li>
-        <li>Excel (Pivot Tables, Charts) Power Query (for filtering and transformation) Data Visualization (for interactive analysis)</li>
-        <h3>2.DataVisualization-mysql-python</h3>
-        <p>rqfcwrevrvcrevrv</p>
-        <li>efewqe</li>
-        <li>efewqebvregrqrg</li>
-        <h3>3.Inventory-Management-System--GUI</h3>
-        <p>ecececw3ec1ec</p>
-        <li>fefe</li>
-        <li>fefeded</li>
-        <h3>5.Employee-Trends-Dashboard</h3>
-        <p>recfrwevvrvv</p>
-        <li>fef</li>
-        <li>fef</li>
-        <h3>4.Close-Tabs-Extenstion</h3>
-        <p>rqvcvrwtvtrebvr</p>
-        <li>evwrv</li>
-        <li>evwrvefwe</li>
-      </div>
-    </section>
+      <section class="projects">
+        <h2>PROJECTS</h2>
+        <div class="project-item">
+          <h3>1.hotel-cancellation-insights</h3>
+          <p>This project analyzes hotel booking cancellations using Excel, covering data cleaning, exploration and visualization.</p>
+          <li>Excel (Pivot Tables, Charts) Power Query (for filtering and transformation) Data Visualization (for interactive analysis)</li>
+          <li>Excel (Pivot Tables, Charts) Power Query (for filtering and transformation) Data Visualization (for interactive analysis)</li>
 
-    <!-- Education Section -->
-    <section class="education">
-      <h2>EDUCATION</h2>
-      <li>BCA</li>
-      <p>Bachelor of Computer Application (2023–2025)</p>
-      <li>NIELIT</li>
-      <p>National Institute of Electronics and Information Technology - (O Level Course) </p>
-    </section>
+          <h3>2.DataVisualization-mysql-python</h3>
+          <p>rqfcwrevrvcrevrv</p>
+          <li>efewqe</li>
+          <li>efewqebvregrqrg</li>
 
-    <section>
+          <h3>3.Inventory-Management-System--GUI</h3>
+          <p>ecececw3ec1ec</p>
+          <li>fefe</li>
+          <li>fefeded</li>
+
+          <h3>5.Employee-Trends-Dashboard</h3>
+          <p>recfrwevvrvv</p>
+          <li>fef</li>
+          <li>fef</li>
+
+          <h3>4.Close-Tabs-Extenstion</h3>
+          <p>rqvcvrwtvtrebvr</p>
+          <li>evwrv</li>
+          <li>evwrvefwe</li>
+        </div>
+      </section>
+
+      <section class="education">
+        <h2>EDUCATION</h2>
+        <li>BCA</li>
+        <p>Bachelor of Computer Application (2023–2025)</p>
+        <li>NIELIT</li>
+        <p>National Institute of Electronics and Information Technology - (O Level Course) </p>
+      </section>
+
+      <section>
         <h2>LANGUAGES</h2>
         <li>Python</li>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
         <li>R</li>
-    </section>
-
-    <!-- Footer (Optional) -->
-    <footer>
-      <p>Made with HTML & CSS | © 2025 Your Name</p>
-    </footer>
+      </section>
+    </div>
   </div>
+
+  <!-- Download Buttons -->
+  <div class="download-buttons">
+    <button onclick="downloadImage()">Download as Image (PNG)</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+  </div>
+
+  <script>
+    function downloadImage() {
+      const resume = document.getElementById("resume-content");
+      html2canvas(resume).then(canvas => {
+        const link = document.createElement("a");
+        link.download = "Sandeep_Mallick_Resume.png";
+        link.href = canvas.toDataURL();
+        link.click();
+      });
+    }
+    
+    function downloadPDF() {
+      const { jsPDF } = window.jspdf;
+      const resume = document.getElementById("resume-content");
+      
+      // Set PDF options
+      const pdf = new jsPDF('p', 'pt', 'a4');
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+      
+      // Calculate the height of the resume content
+      html2canvas(resume, {
+        scale: 2, // Higher quality
+        scrollY: -window.scrollY // Fix for scrolling issues
+      }).then(canvas => {
+        const imgData = canvas.toDataURL('image/png');
+        const imgProps = pdf.getImageProperties(imgData);
+        const imgHeight = (imgProps.height * pdfWidth) / imgProps.width;
+        
+        let heightLeft = imgHeight;
+        let position = 0;
+        
+        // Add first page
+        pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, imgHeight);
+        heightLeft -= pdfHeight;
+        
+        // Add additional pages if needed
+        while (heightLeft >= -pdfHeight) {
+          position = heightLeft - imgHeight;
+          pdf.addPage();
+          pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, imgHeight);
+          heightLeft -= pdfHeight;
+        }
+        
+        pdf.save("Sandeep_Mallick_Resume.pdf");
+      });
+    }
+  </script>
 </body>
 </html>
