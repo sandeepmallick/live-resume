@@ -69,7 +69,7 @@ body {
     text-align: left;
   }  
   /* ANIMATION */
-/*   #wifi-loader {
+  #wifi-loader {
     --background: #0077ff;
     --front-color: #bb0000;
     --back-color: #c3c8de;
@@ -82,7 +82,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-   */
+  
   #wifi-loader svg {
     position: absolute;
     display: flex;
